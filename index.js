@@ -77,6 +77,10 @@ function checkans(indx){
     }
     else{
         h2.innerHTML=`!! Game Over Your score is<b> ${level} <b/> <br>press any key to restart game</br>`
+        document.querySelector("body").style.background="red"
+        setTimeout(()=>{
+            document.querySelector("body").style.background="linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)"
+        },150)
         reset()
     }
 }
